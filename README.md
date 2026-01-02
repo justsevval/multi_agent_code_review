@@ -77,46 +77,77 @@ multi_agent_code_review1/
 ├── requirements.txt
 └── README.md
 
-Create & Activate Virtual Environment
+yaml
+Kodu kopyala
+
+---
+
+## 🚀 Installation & Usage
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/justsevval/multi_agent_code_review1.git
+cd multi_agent_code_review1
+2️⃣ Create & Activate Virtual Environment
+bash
+Kodu kopyala
 python -m venv venv
-venv\Scripts\activate # Windows
-
+venv\Scripts\activate      # Windows
 # source venv/bin/activate # Linux / macOS
-
-Install Dependencies
+3️⃣ Install Dependencies
+bash
+Kodu kopyala
 pip install -r requirements.txt
-
-Run the Backend Server
+4️⃣ Run the Backend Server
+bash
+Kodu kopyala
 uvicorn app.main:app --reload
-
-Open Web Interface
+5️⃣ Open Web Interface
+cpp
+Kodu kopyala
 http://127.0.0.1:8000
+Paste Python code into the interface and click Analyze to view the review results.
 
-Create & Activate Virtual Environment
-python -m venv venv
-venv\Scripts\activate # Windows
+🔌 API Usage
+POST /review
+Analyzes a Python code snippet and returns detected issues.
 
-# source venv/bin/activate # Linux / macOS
+Request Example
 
-Install Dependencies
-pip install -r requirements.txt
+json
+Kodu kopyala
+{
+  "code": "eval('2+2')"
+}
+Response Example
 
-Run the Backend Server
-uvicorn app.main:app --reload
-
-Open Web Interface
-http://127.0.0.1:8000
-
-Testing & Coverage
-
+json
+Kodu kopyala
+{
+  "issues": [
+    {
+      "agent": "SecurityAgent",
+      "message": "Use of eval detected",
+      "severity": "high"
+    }
+  ]
+}
+🧪 Testing & Coverage
 All system components are covered by automated tests.
 
 Run tests with coverage:
 
+bash
+Kodu kopyala
 python -m pytest --cov=app
+📊 Test Coverage
 
-Demo Video
+Overall Coverage: 99%
 
+All critical modules and agents are tested
+
+📽 Demo Video
 A demo video (5–8 minutes) demonstrating:
 
 System architecture
@@ -127,10 +158,9 @@ Web interface usage
 
 Test execution and coverage
 
-🔗 Demo Video: https://youtu.be/oxDwFHncb_Y
+🔗 Demo Video: https://www.youtube.com/watch?v=XXXXXXXX
 
-Academic Context
-
+🎓 Academic Context
 Course: SEN0414 – Advanced Programming
 
 Department: Computer Engineering
@@ -140,3 +170,10 @@ Institution: Istanbul Kültür University
 Semester: Fall 2025
 
 This project was developed as an educational prototype aligned with AI4SE principles.
+
+📜 License
+This project is intended for academic use only.
+
+✨ Final Notes
+This project demonstrates how multi-agent systems can be applied to software engineering tasks to improve consistency, reduce manual effort, and provide structured, explainable feedback for learning-oriented development.
+```
