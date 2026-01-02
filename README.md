@@ -84,8 +84,8 @@ multi_agent_code_review1/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/justsevval/multi_agent_code_review1.git
-cd multi_agent_code_review1
+git clone https://github.com/justsevval/multi_agent_code_review.git
+cd multi_agent_code_review
 
 2️⃣ Create & Activate Virtual Environment
 python -m venv venv
@@ -149,7 +149,7 @@ Web interface usage
 
 Test execution and coverage
 
-🔗 Demo Video: https://www.youtube.com/watch?v=XXXXXXXX
+🔗 Demo Video: https://youtu.be/oxDwFHncb_Y
 
 🎓 Academic Context
 Course: SEN0414 – Advanced Programming
