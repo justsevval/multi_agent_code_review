@@ -77,9 +77,6 @@ multi_agent_code_review1/
 ├── requirements.txt
 └── README.md
 
-yaml
-Kodu kopyala
-
 ---
 
 ## 🚀 Installation & Usage
@@ -89,23 +86,20 @@ Kodu kopyala
 ```bash
 git clone https://github.com/justsevval/multi_agent_code_review1.git
 cd multi_agent_code_review1
+
 2️⃣ Create & Activate Virtual Environment
-bash
-Kodu kopyala
 python -m venv venv
 venv\Scripts\activate      # Windows
 # source venv/bin/activate # Linux / macOS
+
 3️⃣ Install Dependencies
-bash
-Kodu kopyala
 pip install -r requirements.txt
+
 4️⃣ Run the Backend Server
-bash
-Kodu kopyala
 uvicorn app.main:app --reload
+
 5️⃣ Open Web Interface
 cpp
-Kodu kopyala
 http://127.0.0.1:8000
 Paste Python code into the interface and click Analyze to view the review results.
 
@@ -116,14 +110,12 @@ Analyzes a Python code snippet and returns detected issues.
 Request Example
 
 json
-Kodu kopyala
 {
   "code": "eval('2+2')"
 }
 Response Example
 
 json
-Kodu kopyala
 {
   "issues": [
     {
@@ -136,10 +128,9 @@ Kodu kopyala
 🧪 Testing & Coverage
 All system components are covered by automated tests.
 
+
 Run tests with coverage:
 
-bash
-Kodu kopyala
 python -m pytest --cov=app
 📊 Test Coverage
 
