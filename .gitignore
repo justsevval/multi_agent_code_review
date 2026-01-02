@@ -1,0 +1,15 @@
+# venv + cache
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# coverage outputs
+.coverage
+htmlcov/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
